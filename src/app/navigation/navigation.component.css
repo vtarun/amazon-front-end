@@ -1,0 +1,13 @@
+nav {
+    display: block;
+    margin-top: 5px;
+}
+
+nav div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav div a {
+    padding: 5px;
+}
