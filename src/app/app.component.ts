@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MyLibService } from 'my-lib';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,6 @@ import { MyLibService } from 'my-lib';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private myLibService: MyLibService){}
+  constructor(){}
   title = 'amazon-front-end';
 }
