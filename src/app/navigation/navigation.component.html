@@ -1,0 +1,84 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button [matMenuTriggerFor]="category"><mat-icon>menu</mat-icon></button>
+        <mat-menu #category="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="men">Men</button>
+            <button mat-menu-item [matMenuTriggerFor]="women">Women</button>
+            <button mat-menu-item [matMenuTriggerFor]="kids">Kids</button>
+            <button mat-menu-item [matMenuTriggerFor]="electronics">Electronics</button>
+        </mat-menu>
+
+        <mat-menu #men="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="menscloathing">Men's Clothing</button>
+            <button mat-menu-item [matMenuTriggerFor]="accessories">Accessories</button>
+            <button mat-menu-item [matMenuTriggerFor]="mensshoes">Men's Shoes</button>
+            <button mat-menu-item [matMenuTriggerFor]="stores">Stores</button>
+        </mat-menu>
+
+        <mat-menu #women="matMenu">
+            <button mat-menu-item [routerLink]="['/profile']">Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #kids="matMenu">
+            <button mat-menu-item [routerLink]="['/profile']">Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #electronics="matMenu">
+            <button mat-menu-item [routerLink]="['/profile']">Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+
+        <mat-menu #menscloathing="matMenu">
+            <button mat-menu-item>Clothing</button>
+            <button mat-menu-item>T-Shirts & Polos</button>
+            <button mat-menu-item>Shirts</button>
+            <button mat-menu-item>Jeans</button>
+        </mat-menu>
+
+        <mat-menu #accessories="matMenu">
+            <button mat-menu-item>Watch</button>
+            <button mat-menu-item>Wallets</button>
+        </mat-menu>
+
+        <mat-menu #mensshoes="matMenu">
+            <button mat-menu-item>Shoes</button>
+            <button mat-menu-item>Sports Shoes</button>
+        </mat-menu>
+
+        <mat-menu #stores="matMenu">
+            <button mat-menu-item>Sports wear</button>
+            <button mat-menu-item>Men's fashion</button>
+            <button mat-menu-item>Men's handloom</button>
+        </mat-menu>
+
+        <span [routerLink]="['/home']">Amazon.in</span>
+        <span class="example-spacer"></span>
+        <span>
+            <form>                
+                <input type="text" />
+                <button mat-flat-button color="warn"><mat-icon>search</mat-icon></button>
+            </form>
+        </span>
+        <span [routerLink]="['/profile']">My Profile</span>
+        <span [routerLink]="['/trackorder']">Orders</span>
+        <button mat-icon-button>
+            <mat-icon aria-hidden="false" matBadge="15" matBadgeColor="warn" matBadgeSize="small" aria-label="Example home icon" [routerLink]="['/cart']">shopping_cart</mat-icon>
+        </button>
+
+    </mat-toolbar-row>
+</mat-toolbar>

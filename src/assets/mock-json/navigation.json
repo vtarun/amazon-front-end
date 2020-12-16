@@ -1,0 +1,84 @@
+[{
+    "categories": [{
+            "name": "Men",
+            "subcategory": [{
+                    "title": "Men's clothings",
+                    "products": ["Clothing", "T-Shirts & Polos", "Shirts", "Jeans"]
+                },
+                {
+                    "title": "Accessories",
+                    "products": ["Watch", "Wallet"]
+                },
+                {
+                    "title": "Men's Shoes",
+                    "products": ["Shoes", "Sport shoes"]
+                },
+                {
+                    "title": "Stores",
+                    "products": ["Sports wear", "Men's fashion", "Men's handeloom"]
+                }
+            ]
+        },
+        {
+            "name": "Women",
+            "subcategory": [{
+                    "title": "Women's clothings",
+                    "products": ["Clothing", "T-Shirts & Polos", "Shirts", "Jeans"]
+                },
+                {
+                    "title": "Accessories",
+                    "products": ["Watch", "Wallet"]
+                },
+                {
+                    "title": "Men's Shoes",
+                    "products": ["Shoes", "Sport shoes"]
+                },
+                {
+                    "title": "Stores",
+                    "products": ["Sports wear", "Men's fashion", "Men's handeloom"]
+                }
+            ]
+        },
+        {
+            "name": "Kids",
+            "subcategory": [{
+                    "title": "Kids's clothings",
+                    "products": ["Clothing", "T-Shirts & Polos", "Shirts", "Jeans"]
+                },
+                {
+                    "title": "Accessories",
+                    "products": ["Watch", "Wallet"]
+                },
+                {
+                    "title": "Men's Shoes",
+                    "products": ["Shoes", "Sport shoes"]
+                },
+                {
+                    "title": "Stores",
+                    "products": ["Sports wear", "Men's fashion", "Men's handeloom"]
+                }
+            ]
+        },
+        {
+            "name": "Electronics",
+            "subcategory": [{
+                    "title": "Kids's clothings",
+                    "products": ["Clothing", "T-Shirts & Polos", "Shirts", "Jeans"]
+                },
+                {
+                    "title": "Accessories",
+                    "products": ["Watch", "Wallet"]
+                },
+                {
+                    "title": "Men's Shoes",
+                    "products": ["Shoes", "Sport shoes"]
+                },
+                {
+                    "title": "Stores",
+                    "products": ["Sports wear", "Men's fashion", "Men's handeloom"]
+                }
+            ]
+        }
+    ]
+
+}]

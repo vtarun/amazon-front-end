@@ -1,0 +1,24 @@
+.navbar {
+    justify-content: space-between;
+}
+
+span {
+    padding-right: 1rem;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+input {
+    vertical-align: top;
+    outline: none;
+}
+
+form button {
+    outline: none;
+    margin-left: -1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid #f44336;
+}
