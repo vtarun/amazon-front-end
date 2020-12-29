@@ -14,14 +14,13 @@ import { CartComponent } from './cart/cart.component';
 import { TodaysellComponent } from './todaysell/todaysell.component';
 import { AddressComponent } from './address/address.component';
 import { TrackOrderComponent } from './track-order/track-order.component';
-import { ProfileComponent } from './profile/profile.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 
 import { RoutingModule } from './routing/routing.module';
 
-import { AuthService } from './services/auth.service';
-import { HttpService } from './services/http/http.service';
 import { MaterialModule } from './material/material.module';
+import { HttpService } from './shared/services/http.service';
+import { httpInterceptorProviders } from './shared/interceptors';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { MaterialModule } from './material/material.module';
     TodaysellComponent,
     AddressComponent,
     TrackOrderComponent,
-    ProfileComponent,
     LoginSignupComponent
   ],
   imports: [
@@ -45,7 +43,7 @@ import { MaterialModule } from './material/material.module';
     RoutingModule,
     MaterialModule
   ],
-  providers: [AuthService, HttpService],
+  providers: [HttpService, httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

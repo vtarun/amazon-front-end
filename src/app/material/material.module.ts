@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // Material Form Controls
 // import { MatAutocompleteModule } from '@angular/material/autocomplete';
-// import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -17,7 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 // Material Layout
 // import { MatCardModule } from '@angular/material/card';
 // import { MatDividerModule } from '@angular/material/divider';
-// import { MatExpansionModule } from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 // import { MatStepperModule } from '@angular/material/stepper';
@@ -44,7 +44,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 
 const MaterialComponents = [  
-  
   MatInputModule,  
   MatSliderModule,  
   MatMenuModule,
@@ -56,7 +55,9 @@ const MaterialComponents = [
   MatGridListModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatBadgeModule  
+  MatBadgeModule,
+  MatCheckboxModule,
+  MatExpansionModule  
 ];
 
 
@@ -70,3 +71,10 @@ const MaterialComponents = [
 
 })
 export class MaterialModule { }
+
+
+
+
+/**  Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license */

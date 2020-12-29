@@ -1,0 +1,219 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened>
+
+        <div>
+            <!-- <mat-accordion> -->
+            <label>Filters</label>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Price</b>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider>
+
+                    <section style="display:flex;justify-content: space-between;">
+                        <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <span style="text-align: center;">to</span>
+                        <select name="cars" id="carss">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </section>
+                </section>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Size</b>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                </section>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>DISCOUNT</b>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <span class="example-list-section">
+                    <ul>
+                      <li *ngFor="let subtask of task.subtasks">
+                        <mat-checkbox 
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                            {{subtask.name}}
+                        </mat-checkbox>
+                      </li>
+                    </ul>
+                  </span>
+                </section>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>PATTERN</b>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <span class="example-list-section">
+                    <ul>
+                      <li *ngFor="let subtask of task.subtasks">
+                        <mat-checkbox 
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                            {{subtask.name}}
+                        </mat-checkbox>
+                      </li>
+                    </ul>
+                  </span>
+                </section>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>COLOR</b>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                    <span class="size-item">XXL</span>
+                </section>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Brand</b>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <section class="example-section">
+                    <span class="example-list-section">
+                    <ul>
+                      <li *ngFor="let subtask of task.subtasks">
+                        <mat-checkbox 
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                            {{subtask.name}}
+                        </mat-checkbox>
+                      </li>
+                    </ul>
+                  </span>
+                </section>
+            </mat-expansion-panel>
+            <!-- </mat-accordion> -->
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <h2 style="margin-top:15px;margin-left:15px;">Men's > T-Shirts</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <p class="test">On Sale</p>
+                <p class="quick-view">Quick View</p>
+                <img src="../../../assets/images/tshirt_01.jpeg" />
+                <div>
+                    <p>Puma</p>
+                    <h3>Solid red V-Neck</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_02.jpeg" />
+                <div>
+                    <p>Adidas</p>
+                    <h3>Solid red V-Neck</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_03.jpeg" />
+                <div>
+                    <p>Levi's</p>
+                    <h3>Solid red V-Neck</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_04.jpeg" />
+                <div>
+                    <p>Branding</p>
+                    <h3>Branding</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_05.jpeg" />
+                <div>
+                    <p>Branding</p>
+                    <h3>Branding</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_06.jpeg" />
+                <div>
+                    <p>Branding</p>
+                    <h3>Branding</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="../../../assets/images/tshirt_09.jpeg" />
+                <div>
+                    <p>Branding</p>
+                    <h3>Branding</h3>
+                    <p>₹399 <span>789 </span><span>78% off</span></p>
+                    <p>size: M L XL XLL</p>
+                </div>
+            </div>
+        </div>
+        <div style="border-top:1px solid #3f51b5;padding: 10px;">
+            <div class="pagination"><span>Page 2 of 2,001</span>
+                <nav style="display: flex;">
+                    <a><span>Next</span></a>
+                    <a href="/home">1</a>
+                    <a>2</a>
+                    <a>3</a>
+                    <a class="active">4</a>
+                    <a>5</a>
+                    <a>6</a>
+                    <a>7</a>
+                    <a>8</a>
+                    <a>9</a>
+                    <a>10</a>
+                    <a>11</a>
+                    <a><span>Next</span></a>
+                </nav>
+                <span class="_22Tduf"></span>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../services/http/http.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,12 +7,9 @@ import { HttpService } from '../services/http/http.service';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(private httpService: HttpService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.httpService.get().subscribe((data)=>{
-      console.log(data);
-    })
   }
 
 }
