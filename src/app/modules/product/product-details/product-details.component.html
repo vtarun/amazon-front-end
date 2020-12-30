@@ -1,1 +1,80 @@
-<p>product-details works!</p>
+<div>
+    <div class="head-container">
+        <div class="product-flex-item-left">
+            <div class="img-container">
+                <img src="{{productImg}}">
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-addtocart"> Add To Cart</button>
+                <button class="btn btn-buynow"> Buy Now</button>
+            </div>
+        </div>
+        <div class="product-flex-item-right">
+            <div class="breadcrum">Men > T-Shirt > Nike</div>
+            <div>
+                <h1 style="color: #212121;
+                font-size: 18px;
+                font-weight: 400;">
+                    <span style="display:block;font-weight: 500;font-size: 16px;color: #878787;">The Nike</span>
+                    <span style="display: block;line-height: 1.4;">Solid Men Hooded Neck Dark Green T-Shirt</span>
+                </h1>
+            </div>
+
+            <div>
+                <label>
+                    <span>₹299</span>
+                    <span>₹1909</span>
+                    <span>85% OFF</span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <span>4*</span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div>
+                <h1>Offers</h1>
+                <ul>
+                    <li>
+                        <span></span> Text is a text when texted.</li>
+                    <li>
+                        <span></span> Text is a text when texted.</li>
+                    <li>
+                        <span></span> Text is a text when texted.</li>
+                    <li>
+                        <span></span> Text is a text when texted.</li>
+                    <li>
+                        <span></span> Text is a text when texted.</li>
+                </ul>
+            </div>
+            <div>
+                <form>
+                    <label>Deliver to</label>
+                    <input type="text" />
+                    <button>search</button>
+                </form>
+            </div>
+            <div>
+                <span>Size</span>
+                <ul style="display: flex;list-style: none;">
+                    <li *ngFor="let size of sizes; let i = index;">
+                        <a href="">{{size}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+        <h2>After flex</h2>
+    </div>
+</div>

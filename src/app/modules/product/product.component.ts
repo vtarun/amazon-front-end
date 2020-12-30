@@ -19,6 +19,8 @@ export interface Task {
 
 export class ProductComponent implements OnInit{
     panelOpenState = false;
+    category: string = '';
+    subcategory: string = '';
     constructor( private http: HttpService, private router: Router, private route: ActivatedRoute){}
 
     ngOnInit(){
@@ -30,8 +32,8 @@ export class ProductComponent implements OnInit{
         console.log(this.route.snapshot.params.category);        
         console.log(this.route.snapshot.params.subcategory);
         this.route.paramMap.subscribe(params => {
-            console.log(params.get('category'));
-            console.log(params.get('subcategory'));
+            this.category= params.get('category').toUpperCase();
+            this.subcategory= params.get('subcategory').toUpperCase();
         });        
     }
 
