@@ -54,5 +54,49 @@
 .product-flex-item-right {
     width: 67%;
     flex-flow: row;
-    border: 1px solid red;
+    padding-left: 20px;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    background: tomato;
+    /* padding: 5px; */
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    color: white;
+    /* font-size: 3em;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold; */
+    position: relative;
+}
+
+.breadcrum {
+    font-size: 16px;
+    color: #878787;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    height: 266px;
 }

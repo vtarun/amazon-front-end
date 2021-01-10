@@ -53,4 +53,9 @@ export class ProductComponent implements OnInit{
       updateAllComplete() {
         this.allComplete = this.task.subtasks != null && this.task.subtasks.every(t => t.completed);
       }      
+      test(size){
+        console.log(size);
+        this.router.navigate(['hs'], { relativeTo: this.route });        
+      }
+
 }

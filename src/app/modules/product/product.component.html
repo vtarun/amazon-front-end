@@ -126,7 +126,7 @@
     <mat-drawer-content>
         <h2 style="margin-top:15px;margin-left:15px;">{{category}}'s > {{subcategory}}</h2>
         <div class="flex-container">
-            <div class="flex-item">
+            <div class="flex-item" *ngFor="let item of [1,2,3,4,5]; let i = index;" (click)="test(i)">
                 <p class="test">On Sale</p>
                 <p class="quick-view">Quick View</p>
                 <img src="../../../assets/images/tshirt_01.jpeg" />

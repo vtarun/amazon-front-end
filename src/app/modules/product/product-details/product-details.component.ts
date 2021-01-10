@@ -13,6 +13,10 @@ export class ProductDetailsComponent implements OnInit {
   productImg: string;
   productDetails: any;
   sizes: any = [];
+  ratings: number;
+  reviews: number;
+  sellerRating: number;
+  toggled: boolean = false;
   constructor(private route: ActivatedRoute, private http: HttpService) { }
 
   ngOnInit(): void {
@@ -30,5 +34,9 @@ export class ProductDetailsComponent implements OnInit {
     });
     this.productImg = "../../../../assets/images/tshirt_02.jpeg";   
     this.sizes = ['S', 'M', 'L', 'XL', 'XXL'];
+    this.sellerRating = 2.3;
+  }
+  test(size){
+    console.log(size);
   }
 }

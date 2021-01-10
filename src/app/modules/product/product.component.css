@@ -45,6 +45,7 @@ mat-drawer-content {
     line-height: 150px;
     font-weight: bold; */
     position: relative;
+    cursor: pointer;
 }
 
 .test {
@@ -60,7 +61,11 @@ mat-drawer-content {
     text-align: center;
     width: 100%;
     background-color: red;
-    ;
+    display: none;
+}
+
+.flex-item:hover .quick-view {
+    display: block;
 }
 
 img {
